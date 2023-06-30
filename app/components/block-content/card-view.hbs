@@ -1,3 +1,9 @@
+{{!
+    https://guides.emberjs.com/release/components/block-content/
+    https://github.com/ember-polyfills/ember-named-blocks-polyfill/blob/main/README.md
+    https://balinterdi.com/blog/making-a-modal-dialog-using-yieldable-named-blocks/
+}}
+
 <div class="card-view">
     {{yield (hash header=(component 'block-content/card-view-header'))}}
     {{yield (hash body=(component 'block-content/card-view-body'))}}
