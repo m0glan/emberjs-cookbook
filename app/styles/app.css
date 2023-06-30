@@ -1,1 +1,18 @@
-/* Ember supports plain CSS out of the box. More info: https://cli.emberjs.com/release/advanced-use/stylesheets/ */
+.card-view {
+  width: 200px;
+  height: 200px;
+  border: 5px black;
+  border-radius: 5%;
+  display: block;
+}
+
+.card-view__header {
+  width: 200px;
+  height: 50px;
+  font-weight: bold;
+}
+
+.card-view__body {
+  width: 200px;
+  height: 150px;
+}
