@@ -7,7 +7,8 @@ export default class ChattyContainerComponent extends Component {
     names = [ 'Bob', 'Alice', 'Jeremy', 'John', 'Mary' ];
 
     greet = () => {
-        const name = this.names[Math.floor(Math.random()*this.names.length)];
+        const index = Math.floor(Math.random() * this.names.length);
+        const name = this.names[index];
         this.greeting = `Hi there, ${name}!`;
     };
 }
