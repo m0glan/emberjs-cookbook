@@ -1,8 +1,8 @@
-import Component from '@glimmer/component';
++3.import Component from '@glimmer/component';
 import { tracked } from '@glimmer/tracking';
 
 export default class ChattyContainerComponent extends Component {
-    @tracked greeting;
+    @tracked declare greeting: string;
 
     names = [ 'Bob', 'Alice', 'Jeremy', 'John', 'Mary' ];
 
