@@ -106,5 +106,9 @@
   },
   "ember": {
     "edition": "octane"
+  },
+  "dependencies": {
+    "highlight.js": "^11.8.0",
+    "highlightjs-glimmer": "^2.1.0"
   }
 }
