@@ -82,6 +82,7 @@
     "ember-page-title": "^7.0.0",
     "ember-qunit": "^7.0.0",
     "ember-resolver": "^10.1.0",
+    "ember-responsive": "^5.0.0",
     "ember-source": "~5.0.0",
     "ember-template-lint": "^5.10.1",
     "ember-welcome-page": "^7.0.2",

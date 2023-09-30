@@ -1,6 +1,13 @@
 .container {
     &.-center-h {
         margin: auto;
-        width: 80%;
+        width: 70%;
+    }
+
+    &--mobile {
+        &.-center-h {
+            margin: auto;
+            width: 95%;
+        }
     }
 }

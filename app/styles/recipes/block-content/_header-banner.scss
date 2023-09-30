@@ -5,6 +5,7 @@
     background-color: $color-primary;
     border-radius: $border-radius;
     height: 100px;
+    overflow: hidden;
 
     &__section {
         border-right: $border $color-divider;
