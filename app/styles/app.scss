@@ -27,6 +27,9 @@ body {
   color: $color-primary-text;
 }
 
+@import 'cook-book';
 @import 'recipe';
 @import 'code-snippet';
+
 @import 'recipes/block-content/header-banner';
+@import 'recipes/block-content/card-view';

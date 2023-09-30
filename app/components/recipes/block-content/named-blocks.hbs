@@ -1,0 +1,37 @@
+<Recipe @title="Named blocks" as |recipe|>
+    <recipe.Section>
+        <p>
+            <b>Scenario:</b> Parent has a definite structure &mdash; for example,
+            a <code class="language-html">{{"<CardView />"}}</code> component that has
+            a header and a body:
+        </p>
+    </recipe.Section>
+
+    <recipe.Section>
+        <Recipes::BlockContent::CardView>
+            <:header>
+                Talador
+            </:header>
+
+            <:body>
+                <p>Talador is a zone located in the central region of Draenor, and is considered a sanctuary for all Draenei. 
+                    At its heart rests Shattrath City, the great metropolis, and the spiritual well of Auchindoun, where the souls of departed draenei reside. 
+                    Bathed in a perpetual autumn hue, its beautiful olemba forests, gardens and settlements are at risk of decimation by the Iron Horde and the Burning Legion.</p>
+            </:body>
+        </Recipes::BlockContent::CardView>
+    </recipe.Section>
+
+    <recipe.Section>
+        <CodeSnippet 
+            @title="card-view.hbs" 
+            @language="hbs"
+            @code="{{this.cardViewHbs}}" />
+    </recipe.Section>
+
+    <recipe.Section>
+        <CodeSnippet 
+            @title="invocation.hbs" 
+            @language="hbs"
+            @code="{{this.cardViewInvocationHbs}}"/>
+    </recipe.Section>
+</Recipe>
