@@ -1,0 +1,20 @@
+.code {
+    border-radius: $border-radius;
+    overflow: hidden;
+
+    &__title {
+        padding: 10px;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: smaller;
+        background-color: $color-primary;
+    }
+
+    pre {
+        margin: 0;
+        padding: 0;
+    }
+
+    .hljs {
+        background-color: $color-primary;
+    }
+}

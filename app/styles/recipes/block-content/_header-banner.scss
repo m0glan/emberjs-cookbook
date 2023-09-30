@@ -1,0 +1,20 @@
+.header-banner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: $color-primary;
+    border-radius: $border-radius;
+    height: 100px;
+
+    &__section {
+        border-right: $border $color-divider;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        padding: 10px;
+    }
+
+    &__section:last-of-type {
+        border: none;
+    }
+}

@@ -1,7 +1,7 @@
 <div class="recipe">
     <div class="recipe__header">{{@title}}</div>
 
-    <div class="recipe__description">{{yield to="description"}}</div>
-
-    <div class="recipe__body">{{yield to="body"}}</div>
+    <div class="recipe__body">
+        {{yield (hash Section=(component 'recipe-body-section'))}}
+    </div>
 </div>
