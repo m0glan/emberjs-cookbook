@@ -1,0 +1,9 @@
+<div class="code-snippet">
+    <div class="code-snippet__title">{{@title}}</div>
+
+    {{#if (has-block)}}
+        <pre><code class="language-{{@language}}">{{yield}}</code></pre>
+    {{else}}
+        <pre><code class="language-{{@language}}">{{@code}}</code></pre>
+    {{/if}}
+</div>

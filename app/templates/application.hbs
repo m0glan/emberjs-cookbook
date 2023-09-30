@@ -1,17 +1,5 @@
 {{page-title "EmberJS Cookbook"}}
 
-<BlockContent::CardView as |card|>
-    <card.header>
-        <p>Header</p>
-    </card.header>
-    
-    <card.body>
-        <p>Body</p>
-    </card.body>
-</BlockContent::CardView>
-
-
-<BlockContent::ChattyContainer as |c|>
-    <p>{{c.greeting}}</p>
-</BlockContent::ChattyContainer>
-{{outlet}}
+<div class="container{{if (media 'isMobile') '--mobile'}} -center-h">
+    <CookBook />
+</div>

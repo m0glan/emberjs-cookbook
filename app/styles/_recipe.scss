@@ -1,0 +1,31 @@
+$recipe-padding: 10px;
+
+.recipe {
+    border-radius: $border-radius;
+    background-color: $color-secondary;
+    overflow: hidden;
+}
+
+.recipe__header {
+    height: 50px;
+    padding: $recipe-padding;
+    font-size: large;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    border-bottom: $border $color-divider;
+    background-color: $color-tertiary;
+    color: $color-secondary-text;
+}
+
+.recipe__body {
+    padding: $recipe-padding;
+
+    &__section {
+        margin-top: 20px;
+    }
+
+    &__section:first-of-type {
+        margin-top: 0;
+    }
+}

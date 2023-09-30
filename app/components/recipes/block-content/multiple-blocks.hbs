@@ -1,0 +1,58 @@
+<Recipe @title="Multiple blocks" as |recipe|>
+    <recipe.Section>
+        <p>
+            <b>Scenario:</b> A parent element needs to hold multiple templated children &mdash; for example,
+            a <code class="language-html">{{"<HeaderBanner />"}}</code> component that can contain an indefinite number
+            of <code class="language-html">{{"<HeaderBannerSection />"}}</code> that need to have the same styling:
+        </p>
+    </recipe.Section>
+
+    <recipe.Section>
+        <Recipes::BlockContent::HeaderBanner as |banner|>
+            <banner.Section>
+                Section 1
+            </banner.Section>
+
+            <banner.Section>
+                Section 2
+            </banner.Section>
+
+            <banner.Section>
+                Section 3
+            </banner.Section>
+
+            <banner.Section>
+                Section 4
+            </banner.Section>
+
+            <banner.Section>
+                Section 5
+            </banner.Section>
+
+            <banner.Section>
+                ...
+            </banner.Section>
+        </Recipes::BlockContent::HeaderBanner>
+    </recipe.Section>
+
+    <recipe.Section>
+        <CodeSnippet 
+            @title="header-banner.hbs" 
+            @language="hbs"
+            @code="{{this.headerBannerHbs}}" />
+    </recipe.Section>
+
+    <recipe.Section>
+        <CodeSnippet
+            @title="header-banner-section.hbs" 
+            @language="hbs"
+            @code="{{this.headerBannerSectionHbs}}" />
+    </recipe.Section>
+
+    <recipe.Section>
+        <CodeSnippet 
+            @title="invocation.hbs" 
+            @language="hbs"
+            @code="{{this.headerBannerInvocationHbs}}"/>
+    </recipe.Section>
+</Recipe>

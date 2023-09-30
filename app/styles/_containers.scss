@@ -1,0 +1,13 @@
+.container {
+    &.-center-h {
+        margin: auto;
+        width: 70%;
+    }
+
+    &--mobile {
+        &.-center-h {
+            margin: auto;
+            width: 95%;
+        }
+    }
+}

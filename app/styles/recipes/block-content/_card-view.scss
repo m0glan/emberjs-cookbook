@@ -1,0 +1,34 @@
+$card-view-padding: 0.5rem;
+$card-view-w: 300px;
+$card-view-h: 200px;
+
+.card-view {
+    display: flex;
+    flex-direction: column;
+    width: $card-view-w;
+    height: $card-view-h;
+    border-radius: $border-radius;
+    overflow: hidden;
+
+    & > * {
+        width: $card-view-w;
+        max-width: calc(#{$card-view-w} - #{$card-view-padding});
+    }
+
+    &__header {
+        order: 1;
+        flex: 0 0 20px;
+        background-color: $color-tertiary;
+        padding: $card-view-padding;
+    }
+
+    &__body {
+        order: 2;
+        flex: 1 1 0;
+        padding: 0.5rem;
+        background-color: $color-primary;
+        overflow: scroll;
+        width: inherit;
+        padding: $card-view-padding;
+    }
+}

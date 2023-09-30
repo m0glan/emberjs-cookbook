@@ -71,6 +71,7 @@
     "ember-cli-dependency-checker": "^3.3.1",
     "ember-cli-htmlbars": "^6.2.0",
     "ember-cli-inject-live-reload": "^2.1.0",
+    "ember-cli-sass": "^11.0.1",
     "ember-cli-sri": "^2.1.1",
     "ember-cli-terser": "^4.0.2",
     "ember-cli-typescript": "^5.2.1",
@@ -81,6 +82,7 @@
     "ember-page-title": "^7.0.0",
     "ember-qunit": "^7.0.0",
     "ember-resolver": "^10.1.0",
+    "ember-responsive": "^5.0.0",
     "ember-source": "~5.0.0",
     "ember-template-lint": "^5.10.1",
     "ember-welcome-page": "^7.0.2",
@@ -94,6 +96,7 @@
     "prettier": "^2.8.8",
     "qunit": "^2.19.4",
     "qunit-dom": "^2.0.0",
+    "sass": "^1.68.0",
     "stylelint": "^15.7.0",
     "stylelint-config-standard": "^33.0.0",
     "stylelint-prettier": "^3.0.0",
@@ -106,5 +109,9 @@
   },
   "ember": {
     "edition": "octane"
+  },
+  "dependencies": {
+    "highlight.js": "^11.8.0",
+    "highlightjs-glimmer": "^2.1.0"
   }
 }

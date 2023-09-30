@@ -1,0 +1,35 @@
+.card-view {
+  width: 200px;
+  height: 200px;
+  border: 5px black;
+  border-radius: 5%;
+  display: block;
+}
+
+.card-view__header {
+  width: 200px;
+  height: 50px;
+  font-weight: bold;
+}
+
+.card-view__body {
+  width: 200px;
+  height: 150px;
+}
+
+@import 'containers';
+@import 'colors';
+@import 'borders';
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: $color-primary;
+  color: $color-primary-text;
+}
+
+@import 'cook-book';
+@import 'recipe';
+@import 'code-snippet';
+
+@import 'recipes/block-content/header-banner';
+@import 'recipes/block-content/card-view';
